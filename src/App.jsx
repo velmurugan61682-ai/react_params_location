@@ -1,24 +1,25 @@
 import { Route, Routes } from "react-router-dom"
-import Nav from "./components/Nav"
+import MainLayout from "./components/MainLayout"
 import Home from "./components/Home"
 import About from "./components/About"
+
 
 
 const App = () => {
   return (
     <>
-    <Nav/>
     <Routes>
-    <Route path="/" element={<Home/>}/>
-    <Route path="/About" element={<About/>}/>
-
-
+      <Route path="/About" element={<About/>} />
+     
+   <Route element={<MainLayout/>}>
+   <Route path="/" element={<Home/>} />
    
-
-    </Routes>
-    
-    
-    </>
+         
+          
+        </Route>
+        </Routes>
+        
+        </>
   )
 }
 
