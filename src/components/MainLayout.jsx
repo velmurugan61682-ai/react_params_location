@@ -6,8 +6,10 @@ import Footer from "./Footer";
 const MainLayout = () => {
   return (
     <>
-      <Nav/>
-      <Outlet/>  
+      
+      
+       <Nav/>
+       <Outlet/> 
       <Footer/>
     </>
   );
