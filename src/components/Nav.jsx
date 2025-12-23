@@ -12,6 +12,7 @@ const Nav = () => {
         <div className="flex gap-6 text-sm font-medium">
           <Link to="/" className="hover:text-cyan-400 rounded p-1">Home</Link>
           <Link to="/about" className="hover:text-cyan-400 rounded p-1">About</Link>
+          <Link to="/ProfileCard" className="hover:text-cyan-400 rounded p-1">ProfileCard</Link>
         </div>
       </div>
     </nav>
