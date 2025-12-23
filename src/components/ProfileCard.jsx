@@ -4,8 +4,8 @@ const ProfileCard=()=> {
   const [profilecard,setProfilecard]=useState([]);
 
   const fetchProfiles=async()=>{
-    const cards = await fetch("/main.json"); 
-    const data = await cards.json();
+    const cards=await fetch("/main.json"); 
+    const data=await cards.json();
     setProfilecard(data.profileid); 
     console.log(data.profileid); 
   };
@@ -30,7 +30,7 @@ const ProfileCard=()=> {
             className="bg-white rounded-xl shadow-md p-5 text-center hover:scale-105 transition-transform"
           >
             <img
-              src={user.image || `https://i.pravatar.cc/150?img=${user.id}`}
+              src={user.image||`https://i.pravatar.cc/150?img=${user.id}`}
               alt={user.name}
               className="w-24 h-24 mx-auto rounded-full object-cover mb-4"
             />
